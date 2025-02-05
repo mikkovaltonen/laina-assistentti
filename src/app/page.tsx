@@ -2,7 +2,6 @@
 import React, { useState } from 'react'
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'
 import StarRating from '@/components/StarRating'
-import Logo from '@/components/Logo'
 import CompanyLogo from '@/components/CompanyLogo'
 
 // Päivitetään lainatarjoukset

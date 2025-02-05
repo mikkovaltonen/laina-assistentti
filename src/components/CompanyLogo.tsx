@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Image from 'next/image'
 
 interface CompanyLogoProps {
   name: string
@@ -24,10 +25,12 @@ export default function CompanyLogo({ name }: CompanyLogoProps) {
     const logoPath = `/images/logos/${logosMapping[logoKey]}`;
     return (
       <div className="flex items-center justify-center w-full h-full min-h-[40px]">
-        <img 
+        <Image 
           src={logoPath} 
           alt={`${formattedName} logo`} 
-          className="w-32 h-12 object-contain" 
+          width={128}
+          height={48}
+          className="object-contain" 
         />
       </div>
     );
